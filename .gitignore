@@ -1,1 +1,4 @@
 nbome/data/
+nbhome/.ipynb_checkpoints/*
+nbhome/data/*
+nbhome/metastore_db/*
