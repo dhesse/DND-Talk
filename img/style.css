@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-size: 4vh;
+}
+h1 { font-size: 8vh;
+     margin: 0.5em;
+     text-transform: uppercase;}
+h2 { font-size: 7vh;
+     margin: 0.5em; }
+h3 { font-size: 6vh;
+     margin: 0.5em;}
+code, table {
+    text-align: left;
+    display: table;
+    margin: 0.5em auto;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: center;
+}
+
+#outer {
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.slide {
+    page-break-after:always;
+    padding: 2vh;
+}
+
+@media print {  
+  @page {
+    size: 297mm 210mm;
+   }
+}
+
+div.slide > *:first-child {
+    margin-top: 0px;
+    padding-top: 1vh;
+}
+
+div.slide > p {
+    margin: 5px;
+}
+
+iframe {
+    /* for jupyter-embedding */
+    width: 90vw;
+    border: 0;
+    height: 60vh;
+}
+
+/*#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}*/
+
+#header > img {
+    max-width: 90vw;
+    width: 90vw;
+}
+
+img {
+    max-height: 70vh;
+    max-width: 70vw;
+}
+
+th, td {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr.header {
+    border-bottom: .1em solid;
+}
+
+div.slidenum {
+    font-size: 1em;
+    position: fixed;
+    bottom: .2em;
+    right: .5em;
+}
+
+ul {
+    text-align: left;
+}
+
+div > ul {
+    display: table;
+    margin: .5em auto;
+}

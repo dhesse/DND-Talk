@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Dirk Hesse">
+  <title>Hands-on Apache Spark</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://raw.githubusercontent.com/dhesse/DND-Talk/master/img/drive.js"></script>
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/dhesse/DND-Talk/master/img/style.css">
+</head>
+<body><div style="width: 100vw; height: 100vh; background-color: black; position: absolute; top: 0px; left: 0px; display: none;"></div>
+<div id="outer">
+  <!--div id="header">
+    <img src="/static/img/header.png">
+  </div-->
+<div class="slide" style="display: block;">
+<h1 class="title">Hands-on Apache Spark</h1>
+<h2 class="author">Dirk Hesse</h2>
+<h3 class="date"><em>iKnow Solutions Norge</em></h3>
+</div>
+<div class="slide" style="display: none;">
+<h1 id="what-is-spark">What is Spark?</h1>
+<blockquote>
+<p><strong>Apache Spark™</strong> is a fast and general engine for large-scale data processing.</p>
+</blockquote>
+<ul>
+<li>Distributed.</li>
+<li>Fast.</li>
+<li>General.</li>
+<li>In-memory.</li>
+</ul>
+<div class="slidenum">1</div></div>
+<div class="slide" style="display: none;">
+<h2 id="x-faster-than-hadoop">"100x faster than Hadoop"</h2>
+<img src="https://raw.githubusercontent.com/dhesse/DND-Talk/master/img/staring.jpg"><br>
+
+<p style="font-size: .5em">
+Commuity (Sony)
+</p>
+<div class="slidenum">2</div></div>
+<div class="slide" style="display: none;">
+<h1 id="myths-and-facts">Myths and Facts</h1>
+<table style="width: 80vw">
+<tbody><tr>
+<td>
+<img src="https://raw.githubusercontent.com/dhesse/DND-Talk/master/img/Mythbusters.jpg" alt="mb" style="height: 50vh"><br>
+
+<p style="font-size: .5em">
+Mythbusters (Discovery)
+</p>
+</td><td>
+<ul>
+<li>Spark <span class="math inline">≠</span> Hadoop!</li>
+<li><em>Distributed</em>: You need a <strong>cluster</strong>.</li>
+<li><em>In-memory</em>: You (sort of) need lots of <strong>memory</strong>.</li>
+<li><em>Fast and general</em>: You need to write <strong>code</strong> (Scala, Java, Python, R).
+</li></ul></td></tr>
+</tbody></table>
+
+<div class="slidenum">3</div></div>
+<div class="slide" style="display: none;">
+<h1 id="spark-in-the-wild">Spark in the wild</h1>
+<p><a href="http://spark.apache.org/powered-by.html" class="uri">http://spark.apache.org/powered-by.html</a></p>
+<ul>
+<li>eBay
+<ul>
+<li>Log transaction aggregation and analysis.</li>
+</ul></li>
+<li>Uber
+<ul>
+<li>Continous ETL (200k rides/day).</li>
+</ul></li>
+<li>TripAdvisor
+<ul>
+<li>Auto tagging (among others).</li>
+</ul></li>
+<li>Yahoo
+<ul>
+<li>Customized content.</li>
+</ul></li>
+</ul>
+<div class="slidenum">4</div></div>
+<div class="slide" style="display: none;">
+<h1 id="input">Input</h1>
+<table style="width: 80vw">
+<tbody><tr>
+<td style="width: 20vw">
+<img src="https://raw.githubusercontent.com/dhesse/DND-Talk/master/img/giant-swiss-army-knife.jpg"><br>
+
+<p style="font-size: .5em">
+Victorinox
+</p>
+</td><td>
+<ul>
+<li>Out of the box
+<ul>
+<li>local files</li>
+<li>HDFS</li>
+<li>Cassandra</li>
+<li>HBase</li>
+<li>Amazon S3</li>
+<li>...
+</li></ul></li></ul></td><td>
+
+<li>3rd party packages
+<ul>
+<li>MongoDB</li>
+<li>Power BI</li>
+<li>Sequoia</li>
+<li>Cloudant</li>
+<li>Couchbase</li>
+<li>Solr</li>
+<li>salesforce</li>
+<li>many more
+</li></ul></li></td></tr>
+</tbody></table>
+
+
+<div class="slidenum">5</div></div>
+<div class="slide" style="display: none;">
+<h1 id="live-demo">Live Demo</h1>
+<p><a href="https://github.com/dhesse/DND-Talk/blob/master/nbhome/ReadData.ipynb">Reading Data</a></p>
+<div class="slidenum">6</div></div>
+<div class="slide" style="display: none;">
+<h1 id="the-rdd---at-the-of-spark.">The RDD - At the ♥ of Spark.</h1>
+<div class="slidenum">7</div></div>
+<div class="slide" style="display: none;">
+<h1 id="live-demo-1">Live Demo</h1>
+<p><a href="https://github.com/dhesse/DND-Talk/blob/master/nbhome/RDD.ipynb">RDD Demo</a></p>
+<div class="slidenum">8</div></div>
+<div class="slide" style="display: none;">
+<h1 id="behind-the-curtains-mapreduce">Behind the curtains: MapReduce</h1>
+<img src="https://raw.githubusercontent.com/dhesse/DND-Talk/master/img/MapReduce.png" alt="MapReduce"><br>
+
+<p style="font-size: .5em">
+iKnow Solutions
+</p>
+<div class="slidenum">9</div></div>
+<div class="slide" style="display: none;">
+<h1 id="beyond-data-exploration">Beyond data exploration</h1>
+<img src="https://raw.githubusercontent.com/dhesse/DND-Talk/master/img/spark-stack.png" alt="Spark Stack"><br>
+
+<p style="font-size: .5em">
+Apache Foundation
+</p>
+<div class="slidenum">10</div></div>
+<div class="slide" style="display: none;">
+<h1 id="spark-sql">Spark SQL</h1>
+<p><a href="https://github.com/dhesse/DND-Talk/blob/master/nbhome/SQL.ipynb">SQL</a></p>
+<div class="slidenum">11</div></div>
+<div class="slide" style="display: none;">
+<h1 id="deployment">Deployment</h1>
+<table>
+<tbody><tr>
+<td style="vertical-align: top">
+<h3 id="managed-spark">Managed Spark</h3>
+<ul>
+<li><a href="https://www.ibm.com/cloud-computing/bluemix">Bluemix</a> (IBM)</li>
+<li><a href="https://aws.amazon.com/">AWS</a> (Amazon)
+<ul>
+<li><a href="https://aws.amazon.com/emr/">Elastic Map Reduce</a> (EMR)</li>
+<li><a href="https://github.com/amplab/spark-ec2">spark-ec2</a> script</li>
+</ul></li>
+<li><a href="https://azure.microsoft.com/">Azure</a> (Microsoft)</li>
+</ul>
+</td><td style="vertical-align: top">
+<h3 id="hack-your-own">Hack your own</h3>
+<ul>
+<li>Set up a cluster.</li>
+<li>Set up YARN.</li>
+<li>Download Spark.</li>
+<li>Good luck!</li>
+</ul>
+</td></tr>
+</tbody></table>
+<div class="slidenum">12</div></div>
+<div class="slide" style="display: none;">
+<h1 id="qa">Q&amp;A</h1>
+<img src="https://raw.githubusercontent.com/dhesse/DND-Talk/master/img/confused.gif"><br>
+
+<p style="font-size: .5em">
+Pulp Fiction (Miramax)
+</p>
+<div class="slidenum">13</div></div>
+</div>
+
+
+</body></html>
