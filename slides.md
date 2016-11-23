@@ -1,6 +1,13 @@
-% Hands-on Apache Spark
-% Dirk Hesse
-% *iKnow Solutions Norge*
+# Hands-on Apache Spark
+## Dirk Hesse
+## *iKnow Solutions Norge*
+
+Find this talk at
+[https://dhesse.github.io/DND-Talk](https://dhesse.github.io/DND-Talk).
+
+@NotDirkHesse | dirk.hesse@iknowsolutions.eu
+
+---
 
 # What is Spark?
 
